@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "packs": [
+    {"id": "political", "name": "Political Texts", "icon": "🗳️"},
+    {"id": "package-scams", "name": "Package Scams", "icon": "📦"},
+    {"id": "financial", "name": "Financial Scams", "icon": "💰"},
+    {"id": "gambling", "name": "Gambling & Lottery", "icon": "🎰"}
+  ]
+}

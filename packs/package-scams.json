@@ -1,0 +1,16 @@
+{
+  "id": "package-scams",
+  "version": "1.0.0",
+  "rules": [
+    {"type": "contains", "value": "package could not be delivered", "action": "junk"},
+    {"type": "contains", "value": "delivery failed", "action": "junk"},
+    {"type": "contains", "value": "reschedule your delivery", "action": "junk"},
+    {"type": "contains", "value": "confirm delivery address", "action": "junk"},
+    {"type": "contains", "value": "package is waiting", "action": "junk"},
+    {"type": "contains", "value": "customs fee required", "action": "junk"},
+    {"type": "contains", "value": "shipment on hold", "action": "junk"},
+    {"type": "regex", "value": "your\\s+(usps|ups|fedex|dhl)\\s+package", "action": "junk"},
+    {"type": "regex", "value": "tracking\\s*(number|#|:).*click", "action": "junk"},
+    {"type": "contains", "value": "update delivery preferences", "action": "junk"}
+  ]
+}

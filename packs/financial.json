@@ -1,0 +1,16 @@
+{
+  "id": "financial",
+  "version": "1.0.0",
+  "rules": [
+    {"type": "contains", "value": "your account has been suspended", "action": "junk"},
+    {"type": "contains", "value": "verify your bank", "action": "junk"},
+    {"type": "contains", "value": "unusual activity detected", "action": "junk"},
+    {"type": "contains", "value": "confirm your identity", "action": "junk"},
+    {"type": "contains", "value": "free money", "action": "junk"},
+    {"type": "contains", "value": "you have been pre-approved", "action": "junk"},
+    {"type": "contains", "value": "wire transfer", "action": "junk"},
+    {"type": "regex", "value": "your\\s+(credit|debit)\\s+card.*blocked", "action": "junk"},
+    {"type": "regex", "value": "(irs|tax).*refund.*claim", "action": "junk"},
+    {"type": "contains", "value": "act now to avoid fees", "action": "junk"}
+  ]
+}

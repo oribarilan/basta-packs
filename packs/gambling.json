@@ -1,0 +1,16 @@
+{
+  "id": "gambling",
+  "version": "1.0.0",
+  "rules": [
+    {"type": "contains", "value": "free spins", "action": "junk"},
+    {"type": "contains", "value": "casino bonus", "action": "junk"},
+    {"type": "contains", "value": "jackpot winner", "action": "junk"},
+    {"type": "contains", "value": "lottery winner", "action": "junk"},
+    {"type": "contains", "value": "claim your prize", "action": "junk"},
+    {"type": "contains", "value": "you have won", "action": "junk"},
+    {"type": "contains", "value": "sports betting", "action": "junk"},
+    {"type": "regex", "value": "(slot|poker|blackjack).*bonus", "action": "junk"},
+    {"type": "regex", "value": "win\\s+\\$?\\d+.*guaranteed", "action": "junk"},
+    {"type": "contains", "value": "bet now", "action": "junk"}
+  ]
+}

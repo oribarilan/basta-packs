@@ -1,0 +1,16 @@
+{
+  "id": "political",
+  "version": "1.0.0",
+  "rules": [
+    {"type": "contains", "value": "vote for", "action": "junk"},
+    {"type": "contains", "value": "election day", "action": "junk"},
+    {"type": "contains", "value": "polling location", "action": "junk"},
+    {"type": "contains", "value": "your senator", "action": "junk"},
+    {"type": "contains", "value": "political action", "action": "junk"},
+    {"type": "contains", "value": "campaign contribution", "action": "junk"},
+    {"type": "contains", "value": "donate to", "action": "junk"},
+    {"type": "regex", "value": "text\\s+\\w+\\s+to\\s+\\d{5}", "action": "junk"},
+    {"type": "regex", "value": "(democrat|republican|gop)\\s+(needs|urgent)", "action": "junk"},
+    {"type": "contains", "value": "chip in", "action": "junk"}
+  ]
+}
